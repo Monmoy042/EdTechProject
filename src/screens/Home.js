@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Text, Image } from "react-native";
 
-const Home = () => {
+const Home = (props) => {
   const description =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolor debitis similique quas inventore tenetur!";
   return (
@@ -16,10 +16,10 @@ const Home = () => {
         <Text
           style={[
             styles.mainHeader,
-            { fontSize: 30, color: "salmon", marginTop: 0 },
+            { fontSize: 30, color: "blue", marginTop: 0 },
           ]}
         >
-          NetSchool
+          {props.channelName}
         </Text>
         <Text style={styles.mainDescription}>{description}</Text>
       </View>
