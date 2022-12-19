@@ -1,5 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Text, Image } from "react-native";
+import Menu from "../component/Menu";
 
 const Home = (props) => {
   const description =
@@ -22,6 +23,11 @@ const Home = (props) => {
           {props.channelName}
         </Text>
         <Text style={styles.mainDescription}>{description}</Text>
+      </View>
+      <View style={styles.menuStyle}>
+        <View style={styles.lineStyle}></View>
+        <Menu />
+        <View style={[styles.lineStyle, { marginVertical: 20 }]}></View>
       </View>
     </View>
   );
@@ -63,6 +69,12 @@ const styles = StyleSheet.create({
     marginTop: 30,
     paddingBottom: 50,
     lineHeight: 26,
+  },
+  menuStyle: {},
+  lineStyle: {
+    marginBottom: 20,
+    borderWidth: 0.5,
+    borderColor: "gray",
   },
 });
 
