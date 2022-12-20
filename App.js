@@ -48,6 +48,7 @@ const App = () => {
             headerTitleStyle: {
               fontSize: 25,
               fontFamily: "Nunito_600SemiBold",
+              color: "blue",
             },
             headerTitle: "Courses",
             headerTitleAlign: "center",
@@ -61,6 +62,7 @@ const App = () => {
             headerTitleStyle: {
               fontSize: 25,
               fontFamily: "Nunito_600SemiBold",
+              color: "blue",
             },
             headerTitle: "Students",
             headerTitleAlign: "center",
@@ -74,6 +76,7 @@ const App = () => {
             headerTitleStyle: {
               fontSize: 25,
               fontFamily: "Nunito_600SemiBold",
+              color: "blue",
             },
             headerTitle: "About",
             headerTitleAlign: "center",
@@ -87,6 +90,7 @@ const App = () => {
             headerTitleStyle: {
               fontSize: 25,
               fontFamily: "Nunito_600SemiBold",
+              color: "blue",
             },
             headerTitle: "Contact",
             headerTitleAlign: "center",
