@@ -13,7 +13,6 @@ import {
   JosefinSans_400Regular,
   JosefinSans_500Medium,
 } from "@expo-google-fonts/josefin-sans";
-
 import { Nunito_600SemiBold, Nunito_700Bold } from "@expo-google-fonts/nunito";
 import AppLoading from "expo-app-loading";
 

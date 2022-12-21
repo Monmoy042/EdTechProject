@@ -9,6 +9,15 @@ import {
 } from "react-native";
 import Checkbox from "expo-checkbox";
 
+// Google Fonts
+import {
+  useFonts,
+  JosefinSans_400Regular,
+  JosefinSans_500Medium,
+} from "@expo-google-fonts/josefin-sans";
+import { Nunito_600SemiBold, Nunito_700Bold } from "@expo-google-fonts/nunito";
+import AppLoading from "expo-app-loading";
+
 const Contact = ({ navigation }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -122,14 +131,14 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     paddingTop: 20,
     paddingBottom: 15,
-    fontFamily: "JosefinSans_500Medium",
+    fontFamily: "JosefinSans_400Regular",
     textTransform: "capitalize",
   },
   description: {
     fontSize: 20,
     color: "#7d7d7d",
     paddingBottom: 20,
-    fontFamily: "JosefinSans_400Light",
+    fontFamily: "JosefinSans_400Regular",
     lineHeight: 25,
   },
 
@@ -141,7 +150,7 @@ const styles = StyleSheet.create({
     // fontSize: 15,
     color: "#7d7d7d",
     paddingBottom: 5,
-    fontFamily: "JosefinSans_300Light",
+    fontFamily: "JosefinSans_400Regular",
     lineHeight: 25,
   },
   inputStyle: {
@@ -170,12 +179,12 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     marginTop: 20,
-    fontFamily: "JosefinSans_300Light",
+    fontFamily: "JosefinSans_400Regular",
   },
   wrapperText: {
     marginLeft: 10,
     color: "#7d7d7d",
-    fontFamily: "JosefinSans_300Light",
+    fontFamily: "JosefinSans_400Regular",
   },
 });
 

@@ -2,6 +2,15 @@ import React from "react";
 import { View, StyleSheet, Text, Image } from "react-native";
 import Menu from "../component/Menu";
 
+// Google Fonts
+import {
+  useFonts,
+  JosefinSans_400Regular,
+  JosefinSans_500Medium,
+} from "@expo-google-fonts/josefin-sans";
+import { Nunito_600SemiBold, Nunito_700Bold } from "@expo-google-fonts/nunito";
+import AppLoading from "expo-app-loading";
+
 const Home = (props) => {
   const description =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolor debitis similique quas inventore tenetur!";

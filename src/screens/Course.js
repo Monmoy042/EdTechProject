@@ -9,6 +9,15 @@ import {
 } from "react-native";
 import Courses from "../api/Courses";
 
+// Google Fonts
+import {
+  useFonts,
+  JosefinSans_400Regular,
+  JosefinSans_500Medium,
+} from "@expo-google-fonts/josefin-sans";
+import { Nunito_600SemiBold, Nunito_700Bold } from "@expo-google-fonts/nunito";
+import AppLoading from "expo-app-loading";
+
 const Course = ({ navigation }) => {
   const courseCard = ({ item }) => {
     return (

@@ -8,6 +8,15 @@ import {
   Linking,
 } from "react-native";
 
+// Google Fonts
+import {
+  useFonts,
+  JosefinSans_400Regular,
+  JosefinSans_500Medium,
+} from "@expo-google-fonts/josefin-sans";
+import { Nunito_600SemiBold, Nunito_700Bold } from "@expo-google-fonts/nunito";
+import AppLoading from "expo-app-loading";
+
 const About = () => {
   return (
     <View style={styles.aboutContainer}>
@@ -91,7 +100,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     marginTop: 50,
     marginBottom: 10,
-    fontFamily: "JosefinSans_700Bold",
+    fontFamily: "JosefinSans_500Medium",
   },
   paraStyle: {
     fontSize: 18,
@@ -109,7 +118,7 @@ const styles = StyleSheet.create({
     textTransform: "uppercase",
     fontWeight: "500",
     marginVertical: 15,
-    fontFamily: "JosefinSans_700Bold",
+    fontFamily: "JosefinSans_500Medium",
     alignSelf: "center",
   },
   aboutPara: {

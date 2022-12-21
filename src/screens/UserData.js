@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { View, StyleSheet, Text, FlatList, Image } from "react-native";
 
+// Google Fonts
+import {
+  useFonts,
+  JosefinSans_400Regular,
+  JosefinSans_500Medium,
+} from "@expo-google-fonts/josefin-sans";
+import { Nunito_600SemiBold, Nunito_700Bold } from "@expo-google-fonts/nunito";
+import AppLoading from "expo-app-loading";
+
 const UserData = () => {
   const [isLoaded, setIsLoaded] = useState(true);
   const [myData, setMyData] = useState([]);
